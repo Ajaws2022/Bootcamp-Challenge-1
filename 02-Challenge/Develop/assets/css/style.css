@@ -170,6 +170,15 @@ p {
     color: #ffffff;
 }
 
+.topics img {
+    max-height: 200px;
+}
+
+.topics h2 {
+    margin-bottom: 20px;
+    font-size:36px;
+}
+
 
 
 .search-engine-optimization img {
@@ -198,6 +207,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
 
 .footer {
     padding: 30px;
