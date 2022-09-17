@@ -180,7 +180,7 @@ p {
 }
 */
 
-.topics {
+.topic {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -189,11 +189,11 @@ p {
     color: #ffffff;
 }
 
-.topics img {
+.topic img {
     max-height: 200px;
 }
 
-.topics h2 {
+.topic h2 {
     margin-bottom: 20px;
     font-size:36px;
 }
