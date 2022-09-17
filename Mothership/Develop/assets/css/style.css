@@ -1,30 +1,46 @@
 * {
+    /* This is a universal selector whose properties will affect all of the elements on a page unless they're given
+    their own class. Here it is determining what type of box will display and the padding and margin settings
+    for the box */
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+body {    
+    /* Any element in the HTML page with the class 'body' will have the background color below */
+    
     background-color: #d9dcd6;
 }
 
-.header {
+.header {    
+    /* This class is only used in the header, it is setting the padding of the header box and
+    the background color for it, as well as which fonts will be displayed and their color */
+   
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+.header h1 {    
+    /* setting the orientation and size for the font displayed in the h1 in the header */
+    
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+.header h1 .seo {   
+    /* 'seo' was given its own class because it is a different color than the rest of the h1 text */
+    
     color: #d9dcd6;
 }
 
-.header div {
+.header div {    
+    /* This is creating a divide within the header for the added links. First the size and postitioning were determined
+    then properties for the font were added */
+    
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,20 +49,30 @@ body {
 }
 
 .header div ul {
+    /* Removes the bullet points from the list in the header. Lists have bullets by default */
+    
     list-style-type: none;
 }
 
-.header div ul li {
+.header div ul li {    
+    /* Determining the orientation and placement of the list items in the header */
+    
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
+    /
+    * Setting the color and style for the text that will display as the link anchor */
+    
     color: #ffffff;
     text-decoration: none;
 }
 
-.hero {
+.hero {    
+    /* This class adds a large box with a background image. Rather than creating a large box with its own class then
+    placing an image with its own class in that box, both get defined together here then linked into the div using the hero class */
+   
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -55,27 +81,38 @@ a {
     background-position: center;
 }
 
-.float-left {
+.float-left {    
+    /* Any elements with this class will be pushed to the left-hand side of their respective box with a 
+    margin of 25px between their left side and the end of the box*/
+    
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+.float-right {    
+    /* Any elements with this class will be pushed to the right-hand side of their respective box with a 
+    margin of 25px between their right side and the end of the box*/
+    
     float: right;
     margin-left: 25px;
 }
 
-p {
+p {    
+    /* Setting the font size for paragraphs */
     font-size: 16px;
 }
 
-.content {
+.content {    
+    /* Any element with this class will be a horizontal box that takes up 75% of available page space
+    with a space on the left side */
+   
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/*
+/* These classes were all consolidate into 'topic' as they contain the exact properties of one another.
+
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -104,20 +141,28 @@ p {
 }
 */
 
-.topic {
+.topic {   
+    /* This class replaced the redundant ones above. It adds a space between the bottom of the element and the
+    next line with a margin. Spaces the content away from the box edge with 20px of padding. The box height and background
+    color are set. Lastly the font families and color for them are provided. */
+
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
 }
 
-.topic img {
+.topic img {   
+    /* This sets the height of our image within the topic class */
+    
     max-height: 200px;
 }
 
-.topic h2 {
+.topic h2 {    
+    /* Adding a margin below our header in the topic class and setting the font size for the copy */
+    
     margin-bottom: 20px;
     font-size:36px;
 }
@@ -151,7 +196,11 @@ p {
     font-size: 36px;
 } */
 
-.benefits {
+.benefits {   
+    /* This creates a box on the right hand side of the page spaced 20px from the right edge. It is given a clear 
+    value of both to ensure space on either side between other elements. Its size is 20% of the page width and 
+    100% of the height. A backgroound color and fonts are also set here */
+    
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -162,23 +211,34 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-type {
+.benefit-type {  
+    /* What were previously three separate classes for the benefits got consolidated here. 
+    This is adding space below each header within the benefits class and setting the header font color */
+    
     margin-bottom: 32px;
     color: #ffffff;   
 }
 
 .benefit-type h3 {
+    /* Adding space below all h3 headings in the benefit box and aligning them to the center of it */
+   
     margin-bottom: 10px;
     text-align: center;
 }
 
 .benefit-type img {
+    /* This is setting all of the icons in the benefit box to display as a block with 10px of space all around
+    and a max width of 150px. Note: the height is not set because it will automatically scale to the width depending
+    on the image size */
+
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
 /*
+These classes were all replaced by the new benefit class and its element specific classes above
+
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -229,6 +289,10 @@ p {
 */
 
 .footer {
+
+    /* Creating a footer box whos content is 30px from the edge, and is clear from other elements on all
+    sides. The font families are provided and the text placed in the center */
+
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -236,5 +300,7 @@ p {
 }
 
 .footer h2 {
+    /* Setting the heading text size in the footer to 20px */
+
     font-size: 20px;
 }
