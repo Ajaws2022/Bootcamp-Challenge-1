@@ -62,8 +62,7 @@ body {
 }
 
 a {
-    /
-    * Setting the color and style for the text that will display as the link anchor */
+    /* Setting the color and style for the text that will display as the link anchor */
     
     color: #ffffff;
     text-decoration: none;
