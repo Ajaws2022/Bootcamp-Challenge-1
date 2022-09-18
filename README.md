@@ -48,7 +48,7 @@ Here are some pictures of two large groups of classes I was able to clean up:
       
       ---
       
-      <img src="./assets/images/Benefit-Condensed.png">
+      <img src="./assets/images/Benefit-condensed.png">
 
       ---
          
